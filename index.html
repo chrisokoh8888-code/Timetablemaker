@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta & SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TimelyClass - Automate school timetables effortlessly. Save time, reduce errors, and streamline scheduling for your school.">
+  <meta property="og:title" content="TimelyClass - School Timetable Automation System">
+  <meta property="og:description" content="Automate school timetables effortlessly. Save time, reduce errors, and streamline scheduling.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.timelyclass.com/">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://www.timelyclass.com/">
+  <title>TimelyClass - School Timetable Automation System</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">TimelyClass</a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <h1>Automate Your School Timetables Instantly</h1>
+      <p>Eliminate scheduling conflicts and save hours of manual work with TimelyClass. Designed for modern schools and educators.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Request a Demo</a>
+        <a href="#services" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SECTION -->
+  <section class="trust">
+    <div class="container trust-container">
+      <h2>Trusted by Schools Worldwide</h2>
+      <div class="logos">
+        <img src="images/school1.png" alt="School 1 logo">
+        <img src="images/school2.png" alt="School 2 logo">
+        <img src="images/school3.png" alt="School 3 logo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container about-container">
+      <div class="about-text">
+        <h2>Why TimelyClass?</h2>
+        <p>Manual timetables waste valuable time and are prone to errors. TimelyClass automates scheduling, resolves conflicts, and generates optimized timetables in minutes.</p>
+        <p>With intuitive dashboards and real-time updates, managing classes, teachers, and rooms has never been easier.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/about-image.jpg" alt="TimelyClass dashboard preview">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <div class="container services-container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <img src="images/icon-automation.svg" alt="Automation icon">
+          <h3>Automated Scheduling</h3>
+          <p>Generate accurate timetables in minutes, avoiding clashes and manual errors.</p>
+        </div>
+        <div class="card">
+          <img src="images/icon-analytics.svg" alt="Analytics icon">
+          <h3>Advanced Analytics</h3>
+          <p>Track teacher availability, room usage, and optimize resources effortlessly.</p>
+        </div>
+        <div class="card">
+          <img src="images/icon-integration.svg" alt="Integration icon">
+          <h3>Seamless Integration</h3>
+          <p>Easily integrate with your existing school management software and systems.</p>
+        </div>
+        <div class="card">
+          <img src="images/icon-support.svg" alt="Support icon">
+          <h3>24/7 Support</h3>
+          <p>Our dedicated team ensures smooth onboarding and ongoing assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message" id="nameError">Please enter your name</span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="emailError">Please enter a valid email</span>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error-message" id="messageError">Please enter your message</span>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 TimelyClass. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="#" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter"></a>
+        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
