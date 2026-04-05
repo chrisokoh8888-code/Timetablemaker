@@ -1,0 +1,290 @@
+/* ========================
+   VARIABLES
+======================== */
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #6366f1;
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --accent-color: #f59e0b;
+  --font-family: 'Inter', sans-serif;
+  --spacing: 10px;
+}
+
+/* ========================
+   GLOBAL
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ========================
+   HEADER
+======================== */
+.header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing) 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.nav-list {
+  display: flex;
+  gap: var(--spacing);
+}
+
+.nav-list li a {
+  padding: 8px 12px;
+  transition: all 0.3s;
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+  color: var(--accent-color);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--primary-color);
+  transition: all 0.3s;
+}
+
+/* ========================
+   HERO
+======================== */
+.hero {
+  background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+  color: white;
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing);
+}
+
+.hero-cta .btn-primary,
+.hero-cta .btn-secondary {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 5px;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #d97706;
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--primary-color);
+  border: none;
+  transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #e5e7eb;
+}
+
+/* ========================
+   TRUST
+======================== */
+.trust {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.trust-container h2 {
+  margin-bottom: 40px;
+}
+
+.logos img {
+  margin: 0 20px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/* ========================
+   ABOUT
+======================== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* ========================
+   SERVICES
+======================== */
+.services {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin: 20px 0 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ========================
+   CONTACT
+======================== */
+.contact {
+  padding: 60px 0;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  display: none;
+}
+
+/* ========================
+   FOOTER
+======================== */
+.footer {
+  background: #111827;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .socials a img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .nav-list.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+}
